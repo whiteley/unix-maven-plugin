@@ -62,6 +62,11 @@ public class CopyFile
         this.toDir = relativePath( toDir );
     }
 
+    public void setAttributes( MojoFileAttributes attributes )
+    {
+        this.attributes = attributes;
+    }
+
     public AssemblyOperation createOperation( CreateOperationContext context )
         throws MojoFailureException
     {
